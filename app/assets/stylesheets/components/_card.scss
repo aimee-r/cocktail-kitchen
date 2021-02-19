@@ -1,0 +1,36 @@
+.card {
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  border-color: transparent;
+  margin-bottom: 20px;
+}
+
+.card-description {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.card-description h2 {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.card-description a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}

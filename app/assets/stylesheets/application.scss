@@ -7,7 +7,13 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  text-align: center;
+  background-color: #f6f6f6;
+}

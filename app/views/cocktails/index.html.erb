@@ -1,8 +1,11 @@
- <div class="banner-content">
-    <h1>Cocktail Mania</h1>
-    <p>Make the perfect cocktails in your home</p>
+
+ <div class="banner" style="background-image: url(https://st3.depositphotos.com/14051716/18156/v/600/depositphotos_181568132-stock-video-circles-soft-pastel-colors-shape.jpg);">
+  <div class="container">
+    <h1>Cocktail Kitchen</h1>
+    <p>Make the perfect cocktails at home</p>
       <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary" %>
   </div>
+</div>
 
 <div class="container">
   <div class="row">
@@ -12,7 +15,6 @@
           <div class="card-description">
             <h2><%= link_to cocktail.name, cocktail %></h2>
           </div>
-          <%= link_to 'Show', cocktail %>
         </div>
       </div>
     <% end %>

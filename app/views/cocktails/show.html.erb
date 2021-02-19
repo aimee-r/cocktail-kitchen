@@ -1,18 +1,22 @@
-<!-- NEW BELOW
- -->
+ <div class="banner" style="background-image: url(https://st3.depositphotos.com/14051716/18156/v/600/depositphotos_181568132-stock-video-circles-soft-pastel-colors-shape.jpg); height: 100px;">
+     <h1><%= @cocktail.name %></h1>
+</div>
+
 <div class="container">
 
-  <h1><%= @cocktail.name %></h1>
+  <div class="recipe">
+        <div class="col-sm-6 col-md-6">
+      <img src="https://i.pinimg.com/564x/98/8a/a9/988aa92d764c5a5957c91f962f369e18.jpg" alt="";>
+    </div>
 
-  <div class="row">
-    <div class="col-sm-12 col-md-6">
-      <h3>Recipe</h3>
+    <div class="col-sm-6 col-md-6">
+      <h3>Here is the recipe</h3>
       <table class="table table-bordered">
         <tbody>
           <thead>
             <th>Ingredient</th>
             <th>Description</th>
-            <th>Action</th>
+            <th>Delete</th>
           </thead>
           <% @cocktail.doses.each do |dose| %>
             <tr>
@@ -28,9 +32,10 @@
         </tbody>
       </table>
     </div>
+
      </div>
 
-<div class="Reviews">
+<div class="review">
     <h3>Reviews</h3>
   <% if @cocktail.reviews.empty? %>
     <p>Be the first to let a review</p>
@@ -50,6 +55,7 @@
       <% end %>
     </ul>
   <% end %>
+</div>
 </div>
 
 <%= link_to 'Leave a new recipe', new_cocktail_dose_path(@cocktail) %>
