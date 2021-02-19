@@ -6,7 +6,7 @@
 
   <div class="recipe">
        <!--  <div class="col-sm-4 col-md-4"> -->
-      <img src="https://i.pinimg.com/564x/98/8a/a9/988aa92d764c5a5957c91f962f369e18.jpg" alt="";>
+      <%= cl_image_tag @cocktail.photo.key, height: 400, width: 400, crop: :fill %>
 <!-- </div> -->
 <!--     <div class="col-sm-4 col-md-4"> -->
       <h3>Here is the recipe</h3>
