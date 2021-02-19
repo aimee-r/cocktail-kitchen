@@ -1,9 +1,20 @@
-<h1>Cocktails</h1>
+ <div class="banner-content">
+    <h1>Cocktail Mania</h1>
+    <p>Make the perfect cocktails in your home</p>
+      <%= link_to "Add a cocktail", new_cocktail_path, class: "btn btn-primary" %>
+  </div>
 
-<ul>
-<% @cocktails.each do |f| %>
-<li><%= f.name %></li>
-<%= link_to 'Show', f %>
-<% end %></ul>
-
-<%= link_to 'New Cocktail', new_cocktail_path %>
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://source.unsplash.com/500x400/?cocktail');">
+          <div class="card-description">
+            <h2><%= link_to cocktail.name, cocktail %></h2>
+          </div>
+          <%= link_to 'Show', cocktail %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
