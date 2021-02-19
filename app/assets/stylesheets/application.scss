@@ -17,3 +17,20 @@ body {
   text-align: center;
   background-color: #f6f6f6;
 }
+
+.btn {
+  background-color: #6930c3;
+  border-color: #6930c3;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #a685e2;
+  cursor: pointer;
+  border-color: #a685e2;
+}
+
+.recipe img {
+  width: 100px;
+}
